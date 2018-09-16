@@ -21,7 +21,7 @@ class CreateOrdersTable extends Migration
             $table->decimal('total', 8, 2);         
             $table->timestamps();
 
-            $table->foreign('product_id')->references('id')->on('orders');            
+            $table->foreign('product_id')->references('id')->on('products');            
         });
     }
 
